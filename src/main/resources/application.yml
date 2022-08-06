@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sa1341/case-cloud-config-repository
+          search-paths: account,bank,fund,common
+  application:
+    name: case-cloud-config-server
+
+server:
+  port: 8888
